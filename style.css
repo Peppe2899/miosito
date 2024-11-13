@@ -1,54 +1,61 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* Resetta i margini e i padding */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Impostazioni generali del corpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header */
 header {
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 10px 0;
   text-align: center;
 }
 
-nav {
-  background-color: #444;
-  overflow: hidden;
+header nav ul {
+  list-style: none;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
+header nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
   color: white;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Sezioni */
 section {
   padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 8px;
+  margin: 10px 0;
 }
 
+section#home {
+  background-color: #fff;
+}
+
+section#about, section#services, section#contact {
+  background-color: #e2e2e2;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   background-color: #333;
   color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
